@@ -8,6 +8,49 @@
 	<body>
 		<h1>New Web Project Page</h1>
 		<h2>My New Header</h2>
+		
+		<script>
+		var candies = [{
+			name:"krackel", 
+			type:"crisp"
+		}, {
+			name:"special_dark", 
+			type:"plain"
+		}, {
+			name:"goodbar", 
+			type:"peanuts"
+		}, {
+			name:"hershey", 
+			type:"plain"
+		}];
+		
+		/*
+		 * starting at index 0 ending at before index 4
+		 * increment by 1 each time
+		 */
+		
+		var favCandies = [];
+		var nonFavs = [];
+		
+		for(var i=0;i<4;i++){
+			
+			var item = candies[i];
+		
+			if(item.type == "plain"){
+				
+				favCandies.push(item);
+				
+			}else{
+				nonFavs.push(item);
+			
+			} // end of If statement
+		
+		} // end of For loop
+		
+		console.log(favCandies);
+		console.log(nonFavs);
+					
+		</script>
 	</body>
 </html>
 
